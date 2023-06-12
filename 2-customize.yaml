@@ -26,11 +26,6 @@
 
 - import_playbook: golang/vscode.yaml
 
-# this stuff is all going into home directory anyway
-# so just throw it into the customize. also kind of
-# disgusting/unsafe how this just fetches a shell file
-# from github.
-- import_playbook: nodejs/core.yaml
 - import_playbook: nodejs/customization.yaml
 - import_playbook: nodejs/vscode.yaml
 

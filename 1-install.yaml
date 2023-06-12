@@ -39,4 +39,6 @@
 # rust-lang
 - import_playbook: rust-lang/core.yaml
 
+# Node
+- import_playbook: nodejs/core.yaml
 
