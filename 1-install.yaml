@@ -30,12 +30,6 @@
 # golang
 - import_playbook: golang/core.yaml
 
-# NodeJS
-- import_playbook: nodejs/core.yaml
-
-# Postman
-- import_playbook: postman/core.yaml
-
 # Python
 - import_playbook: python/core.yaml
 
