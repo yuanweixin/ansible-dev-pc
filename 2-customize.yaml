@@ -9,11 +9,9 @@
   hosts: 127.0.0.1
   connection: local
 
-- import_playbook: _all_no_customization.yaml
-
 ##### Operating system packages and configuration
 
-- import_playbook: customization-text.yaml
+- import_playbook: _customization-text.yaml
 
 ##### Developer tools
 
