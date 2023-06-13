@@ -1,0 +1,14 @@
+- name: galaxy
+  hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    - name: install roles from galaxy
+      command: ansible-galaxy install {{ item }}
+      with_items:
+        - andrewrothstein.miniconda
+
+    - name: apply the role
+      include_role:
+        name: andrewrothstein.miniconda
+

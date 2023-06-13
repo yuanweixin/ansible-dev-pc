@@ -9,6 +9,9 @@
   hosts: 127.0.0.1
   connection: local
 
+- import_playbook: galaxy/core.yaml
+
+
 ##### Operating system packages and configuration
 
 - import_playbook: _core.yaml
