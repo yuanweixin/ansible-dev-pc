@@ -12,3 +12,10 @@
       include_role:
         name: andrewrothstein.miniconda
 
+    - name: Enable conda
+      blockinfile:
+        path: ~/.bashrc
+        marker: "### {mark} Ansible managed: miniconda support"
+        block: |
+          export PATH=$PATH:/usr/local/anaconda/bin
+
